@@ -1,0 +1,830 @@
+<html lang="en"> 
+ <head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> 
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+    
+    
+}
+body {
+      
+   text-align:center; 
+    background: linear-gradient(-45deg, rgba(0,2,132,5) 0%, rgba(56,249,20,1) 33%, rgba(260,122,252,1) 66%, rgba(176,255,16,1)) no-repeat;
+    background-size: 500%;
+    background-attachment: fixed;
+    animation: gradientAnim 5s ease infinite;
+}
+
+    @keyframes gradientAnim{
+    0% {
+        background-position: 0% 25%;
+    }
+    25% {
+        background-position: 25% 50%;
+    }
+    50% {
+        background-position: 50% 75%;
+    }
+  75% {
+        background-position: 75% 100%;
+    }
+      100% {
+        background-position: 0% 25%;
+    }
+}
+  
+    
+}
+.bgimg{
+    width:100vw;
+    height:100vh;
+    background-repeat:no-repeat ;       
+     background-image:url();
+   align:center;-size:100% 100%;
+    
+    overflow:scroll;
+      /*
+    color:transparent ;
+    background-clip:text;
+    font-size:2rem;
+    font-weight:bolder;
+    text-align:center;
+    -webkit-background-clip:text;*/
+}
+.ASKY{
+ box-shadow:inset 56px 56px 100px blue,inset  -56px -56px 100px orange,inset 66px 76px 100px pink;
+         
+    color:black;
+    font-weight:bolder;
+    text-align:left;
+    font-size:25px;
+    border-radius:20px;
+    
+  
+    
+    }
+    .ASKY1{
+ box-shadow:inset 56px 56px 100px pink,inset  -56px -56px 100px yellow,inset 166px 76px 100px orange;
+         
+    color:black;
+    font-weight:bolder;
+    text-align:left;
+    font-size:23px;
+    border-radius:20px;
+    
+  
+    
+    }
+}
+    
+   .fantasy {
+    font-family: Blippo, fantasy;
+    font-size:10px;
+    
+    
+    
+}  
+
+
+.heart {
+  position: fixed;
+  top: -1vh;
+  color: white;
+  font-family:cursive;
+  font-size : 1rem;
+  transform: translateY(0);
+  animation: fall 0.01s linear forwards;
+  text-shadow: 0 0 15px #ff8d00, 0 0 25px #ffa500, 0 0 30px #ff8d00, 0 0 4px #ff8d00, 0 0 30px #9AFFFF00, 0 0 6px #ff8d00, 0 0 98px #ff8d00;
+  
+  
+    
+  
+}
+
+@keyframes fall {
+  to {
+    transform:translateY(300vh) ;
+       
+  }
+}  
+
+.masterimg{
+    width:34vw;
+    height:34vw;
+    border-radius:100%;
+    border:10px solid red;
+    background-attachment:cover; 
+    margin-top:25px;
+    box-shadow:5px 5px 50px rgba(250, 0,0, 10.4);
+    border:0px solid #f6f6f6;
+    
+    }
+    
+
+.kingtext{
+    margin:20px;
+    background-color:red;
+    border-radius:30px;
+    color:BLACK;
+    font-family:cursive;
+    align:center;
+    box-shadow:5px 5px 30px rgba(250, 0, 0, 10.4);
+    border:0px solid #f6f6f6;
+    padding:0px;
+    
+    
+    }
+    .kingtext1{
+    margin:20px;
+    background-color: transparent;
+    border-radius:30px;
+    color:BLACK;
+    font-family:cursive;
+    align:center;
+    box-shadow:5px 5px 30px rgba(250, 0, 0, 10.4);
+    border:0px solid #f6f6f6;
+    padding:0px;
+ 
+ }
+.ASK{
+    
+    border-radius:20px;
+    height:975px;
+    text-align:center;
+    padding:5px;
+}
+.ASK2{
+    
+    border-radius:20px;
+    height:405px;
+    text-align:center;
+    padding:5px;
+}
+.ASK1{
+    
+    border-radius:100px;
+    height:140px;
+    text-align:center;
+    padding:1px;
+}
+
+.text{
+    border-radius:20px;
+    background-color:#f6f6f6;
+    text-align:center;
+    padding:1px;
+    box-shadow:5px 10px 30px rgba(250, 0, 0, 10.4);
+    animation-name:colorchange;   
+    animation-iteration-count:infinite ;
+    animation-duration:10s;
+  
+  
+ 
+      
+}
+    
+}
+.mastername{
+    color:#00ff;
+
+    font-weight:bolder;
+    overflow:hidden ;
+    color:BLACK;
+    background-clip:text;
+    width:auto;
+    text-shadow:5px 2px 25px rgba(250, 0, 0, 10.4); 
+    font-size:1rem;
+    font-family:' press start 2',cursive;
+  
+}
+
+.name{
+      
+    animation-name:colorchange;   
+    animation-iteration-count:infinite ;
+    animation-duration:5s;
+    
+}
+@keyframes colorchange {
+   0%{background:black;}
+    1%{background:linear-gradient(blue,white,red,orange);}
+    2%{background:linear-gradient(white,red,orange,blue );}
+    3%{background:linear-gradient( red,orange,blue,white);}
+    4%{background:linear-gradient(orange,blue,white,red);}
+    5%{background:linear-gradient(white,red,orange,blue );}
+    6%{background:linear-gradient( red,orange,blue,white);}
+    7%{background:linear-gradient(orange,blue,white,red);}
+    8%{background:linear-gradient(white,red,orange,blue );}
+    9%{background:linear-gradient( red,orange,blue,white);}
+    10%{background:linear-gradient(orange,blue,white,red);}
+    11%{background:linear-gradient(white,red,blue,yellow );}
+    12%{background:linear-gradient( red,blue,yellow,white);}
+    13%{background:linear-gradient(blue,yellow,white,red);}
+    14%{background:linear-gradient(white,red,blue,yellow );}
+    15%{background:linear-gradient( red,blue,yellow,white);}
+    16%{background:linear-gradient(blue,yellow,white,red);}
+    17%{background:linear-gradient(white,red,blue,yellow );}
+    18%{background:linear-gradient( red,blue,yellow,white);}
+    19%{background:linear-gradient(blue,yellow,white,red);}
+    20%{background:linear-gradient(white,red,blue,yellow );}
+    21%{background:linear-gradient( red,blue,white,pink);}
+    22%{background:linear-gradient(blue,white,pink,red);}
+    23%{background:linear-gradient(white,pink,red,blue );}
+    24%{background:linear-gradient( red,blue,white,pink);}
+    25%{background:linear-gradient(blue,white,pink,red);}
+    26%{background:linear-gradient(white,pink,red,blue );}
+    27%{background:linear-gradient( red,blue,white,pink);}
+    28%{background:linear-gradient(blue,white,pink,red);}
+    29%{background:linear-gradient(white,pink,red,blue );}
+    30%{background:linear-gradient( orange,red,blue,white);}
+    31%{background:linear-gradient(orange,blue,white,red);}
+    32%{background:linear-gradient(white,orange,red,blue );}
+    33%{background:linear-gradient( orange,red,blue,white);}
+    34%{background:linear-gradient(pink,blue,white,red);}
+    35%{background:linear-gradient(pink,white,red,blue );}
+    36%{background:linear-gradient( pink,red,blue,white);}
+    37%{background:linear-gradient(yellow,blue,white,red);}
+    38%{background:linear-gradient(yellow,white,red,blue );}
+    39%{background:linear-gradient( red,blue,white);}
+    40%{background:linear-gradient(blue,white,red);}
+    41%{background:linear-gradient(white,red,blue );}
+    42%{background:linear-gradient( red,blue,white);}
+    43%{background:linear-gradient(blue,white,red);}
+    43%{background:linear-gradient(white,red,blue );}
+    44%{background:linear-gradient( red,blue,white);}
+    45%{background:linear-gradient(blue,white,red);}
+    46%{background:linear-gradient(white,red,blue );}
+    47%{background:linear-gradient( red,blue,white);}
+    48%{background:linear-gradient(blue,white,red);}
+    50%{background:linear-gradient(white,red,blue );}
+    51%{background:linear-gradient( red,blue,white);}
+    52%{background:linear-gradient(blue,white,red);}
+    53%{background:linear-gradient(white,red,blue );}
+    54%{background:linear-gradient( red,blue,white);}
+    55%{background:linear-gradient(blue,white,red);}
+    56%{background:linear-gradient(white,red,blue );}
+    57%{background:linear-gradient( red,blue,white);}
+    58%{background:linear-gradient(blue,white,red);}
+    59%{background:linear-gradient(white,red,blue );}
+    60%{background:linear-gradient( red,blue,white);}
+    61%{background:linear-gradient(blue,white,red);}
+    62%{background:linear-gradient(white,red,blue );}
+    63%{background:linear-gradient( red,blue,white);}
+    64%{background:linear-gradient(blue,white,red);}
+    65%{background:linear-gradient(white,red,blue );}
+    66%{background:linear-gradient( red,blue,white);}
+    67%{background:linear-gradient(blue,white,red);}
+    68%{background:linear-gradient(white,red,blue );}
+    69%{background:linear-gradient( red,blue,white);}
+    70%{background:linear-gradient(blue,white,red);}
+    71%{background:linear-gradient(white,red,blue );}
+    72%{background:linear-gradient( red,blue,white);}
+    73%{background:linear-gradient(blue,white,red);}
+    74%{background:linear-gradient(white,red,blue );}
+    75%{background:linear-gradient( red,blue,white);}
+    76%{background:linear-gradient(blue,white,red);}
+    77%{background:linear-gradient(white,red,blue );}
+    78%{background:linear-gradient( red,blue,white);}
+    79%{background:linear-gradient(blue,white,red);}
+    80%{background:linear-gradient(white,red,blue );}
+    81%{background:linear-gradient( red,blue,white);}
+    82%{background:linear-gradient(blue,white,red);}
+    83%{background:linear-gradient(white,red,blue );}
+    84%{background:linear-gradient( red,blue,white);}
+    85%{background:linear-gradient(blue,white,red);}
+    86%{background:linear-gradient(white,red,blue );}
+    87%{background:linear-gradient( red,blue,white);}
+    88%{background:linear-gradient(blue,white,red);}
+    89%{background:linear-gradient(white,red,blue );}
+    90%{background:linear-gradient( red,blue,white);}
+    91%{background:linear-gradient(blue,white,red);}
+    92%{background:linear-gradient(white,red,blue );}
+    93%{background:linear-gradient( red,blue,white);}
+    94%{background:linear-gradient(blue,white,red);}
+    95%{background:linear-gradient(white,red,blue );}
+    96%{background:linear-gradient( red,blue,white);}
+    97%{background:linear-gradient(blue,white,red);}
+    98%{background:linear-gradient(white,red,blue );}
+    99%{background:linear-gradient( red,blue,white);}
+    100%{background:linear-gradient(blue,white,red);}
+}
+#hbdimg{
+    background-color:white;
+    width:80%;
+  height:65%;
+    margin:20px;
+    border-radius:20px;
+    box-shadow:5px 5px 25px rgba(250,0,0,10.4),-5px -5px 25px rgba(250, 0, 0, 10.4); 
+}
+.logo{
+    width:100vw;
+    background-color:white;
+}
+#navmaster{
+    width:200px;
+    height:120px;
+    background-attachment:cover;
+    background-size:100% 100%;
+    border-radius:20px;
+    margin:10px;
+    background-color:yellow;
+}
+
+   
+}
+
+.box{
+    height:200px;
+    width:200px;
+    background:white;
+    position:absolute;
+    top:350%;
+    left:50%;
+    transform:translate(-50%,-50%) rotate(0deg);
+    box-shadow: 30px 40px 85px red;
+    animation:an 4s alternate infinite;
+}
+@keyframes an
+{
+    0%
+    {
+        border-radius:64% 36% 27% 73%/55% 58% 56% 23%;
+    }
+    15%
+    {
+        border-radius:14% 96% 87% 13%/15% 18% 36% 93%;
+    }
+    50%
+    {
+        border-radius:77% 21% 32% 93%/98% 91% 94% 20%;
+    }
+    75%
+    {
+        border-radius:28% 72% 64% 36%/39% 11% 55% 51%;
+    }
+    100%
+    {
+        border-radius:64% 36% 27% 73%/55% 58% 56% 23%;
+    }
+}
+
+.box img{
+    height:200px;
+    width:200px;
+    animation:an 4s alternate infinite;
+}
+
+
+.follow{
+color: red;
+font-family: Blippo, fantasy;
+}
+ 
+</style> 
+  <link href="https://fonts.googleapis.com/css2?family=Amita:wght@700&amp;display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&amp;display=swap" rel="stylesheet"> 
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+</style> 
+  <title>
+   MAMBA
+   </title> 
+ <style type="text/css" id="dcoder_stylesheet">#preloader{
+  
+  background:black no-repeat center center;
+           
+height:100%;
+  width:100%;
+  position:fixed;
+  z-index:100;
+  
+    
+    
+  }
+
+
+marquee{
+
+  width:device;
+  height:40px;
+  color:yellow;
+  font-family: "Sofia", sans-serif;
+  font-size: 25px;
+  border-radius:20px;
+  background-color: black;
+
+
+
+
+}
+
+
+canvas{
+    background colour: black;
+    box-shadow:5px 5px 30px rgba(0, 0,0, 10.4);
+    align:center;
+    border-radius:50px;
+    height:100px;
+    width:100px;
+    
+}
+
+.webtitle {
+text-align: center;
+
+color: black;
+padding: 5px;
+font-size: 23px;
+font-family: 'Press Start 2P', normal;
+
+translate: center;
+margin-block-end: 10px;
+shape-outside: margin-box;
+shape-margin: 10px;
+
+}
+.mamba{
+
+    background-color: white;
+    
+    
+    border-radius:15px;
+    color:BLACK;
+ 
+ height:11px;
+    font-size: 8px;
+   font-family: 'Press Start 2P', cursive;
+    text-align:center;
+   
+}
+
+#battery {
+  width: 15px;
+  
+  max-width: 30%;
+  height: calc(20px * 8 / 5);
+  background: linear-gradient(to bottom, #f33, orange, yellow, green);
+  background-size: 1000% 1000%;
+  background-position: 100% 100%;
+  border-radius: 2px;
+  margin:2px ;
+}
+
+#battery::before {
+  width: 75%;
+  display: block;
+  content: '';
+  height: 0.2em;
+  background: lightgray;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  top: -0.2em;
+  right: -12.5%;
+}
+
+#titlebt {
+  text-align:centre;
+  color: black;
+  font-family: cursive;
+  font-weight: bold;
+  padding-top: 10%;
+  font-size: 0.5em;
+}</style></head> 
+ <body> 
+  <style type="text/css" media="all">
+    
+    
+        .g1 {
+      display: flex;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+    }
+    .best {
+      z-index: 1500;
+      width: 100vw;
+      height: 100vh;
+     
+      display: flex;
+      position:fixed;
+         
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: rgba(0,0,0,0.8);
+    }
+    .cir {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      border-radius: 50%;
+      border: 3px solid rgb(73,174,60);
+      animation: 5s first linear infinite;
+    }
+    .cir1 {
+      animation-delay: 0.5s;
+      border-color: #00f;
+    }
+    .cir2 {
+      animation-delay: 1s;
+      border-color: #57f5f2;
+    }
+    .cir3 {
+      animation-delay: 1.5s;
+      border-color: #73838b;
+    }
+    .cir4 {
+      animation-delay: 2s;
+      border-color: #0043ff;
+    }
+    .cir5 {
+      animation-delay: 2.5s;
+      border-color: #ff0027;
+    }
+    .cir6 {
+      animation-delay: 3s;
+      border-color: #3bff00;
+    }
+    .go {
+      width: 18px;
+      height: 18px;
+      position: relative;
+      border-radius: 9px;
+      animation: 6s going linear infinite;
+    }
+    .go1 {
+      background-color: #3bff00;
+    }
+    .go2 {
+      background-color: #0043ff;
+      animation-delay: 1s;
+    }
+    .go3 {
+      background-color: #ff0027;
+      animation-delay: 2s;
+    }
+    .go4 {
+      background-color: #73838b;
+      animation-delay: 3s;
+    }
+    .ld::before {
+      content: "Loading";
+      top: 100px;
+      color: #fff;
+      font-family: Times New Roman;
+      font-size: 30px;
+      font-weight: 850px;
+      position: relative;
+      text-transform: uppercase;
+      animation: 4s ld linear infinite;
+    }
+@keyframes ld {
+      0% {
+        content: "loading";
+      }
+      25% {
+        content: "loading.";
+      }
+      50% {
+        content: "loading..";
+      }
+      75% {
+        content: "loading...";
+      }
+    }
+@keyframes going {
+      0% {
+        top: 0;
+      }
+      9% {
+        top: -50px;
+        height: 40px;
+        transform: rotate(0deg);
+      }
+      15% {
+        transform: rotate(360deg);
+      }
+      24% {
+        top: -50px;
+        height: 40px;
+      }
+      30% {
+        top: 0;
+        height: 18px;
+        transform: rotate(360deg);
+      }
+    }
+@keyframes first {
+      50% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg) scale(0.3);
+      }
+    }
+   </style> 
+  <div id="preloader"> 
+   <div class="best"> 
+    <div class="g1"> 
+     <div class="cir1 cir"></div> 
+     <div class="cir2 cir"></div> 
+     <div class="cir3 cir"></div> 
+     <div class="cir5 cir"></div> 
+     <div class="cir6 cir"></div> 
+     <div class="go1 go"></div> 
+     <div class="go2 go"></div> 
+     <div class="go3 go"></div> 
+     <div class="go4 go"></div> 
+    </div> 
+    <div class="g2"> 
+     <div class="ld"></div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="marquee"> 
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&amp;effect=fire"> 
+   <h1 class="font-effect-fire"> <marquee behavior="alternate">
+      🖤My Bestfriend🖤 
+    </marquee> </h1> 
+  </div> 
+  <div id="battery"> 
+   <p id="titlebt"></p> 
+  </div> 
+  <div class="bgimg" data-aos="fade-left"> <!--nav---> 
+   <div class="frontimg"> 
+    <div class=""> 
+     <img class="masterimg" src="https://www.dropbox.com/s/d0yptljfo28dqng/IMG_20230528_204110_307.jpg?dl=1
+           " height="250 px" width="240px" alt="" \> 
+     <br> 
+    </div> 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet"> 
+    <div class="webtitle"> 
+     <div class="text"> 
+      <h1 class="webtitle"> My Dear BestFriend</h1> 
+     </div> 
+    </div> 
+    <div class="kingtext1" bgcolor="white"> 
+     <div class="ASK2"> 
+      <h1 class="ASKY1"> 😃🖤😃🖤😃🖤😃🖤😃🖤 Mene buss uhi tumhe msg kiya tha buss mre kuch kam k wajha se pr mujhe laga mai tumhe apni bestfriend k liye puchu wese mujhe nhi lga tha tum dil se mere pyare bestie banoge per tumne accept kr liye❤️.Or to mai kisi ladki se call pe bat nhi krta jada pr tumhari voice mujhe achi lagti hai.And thank you so much for your kindness and for being such an amazing friend😘.. 😃🤍😃🤍😃🤍😃🤍😃🤍 </h1> 
+     </div> 
+    </div> 
+    <img id="hbdimg" src="https://www.dropbox.com/s/5u6xwlj69mocdg7/IMG_20230528_204124_190.jpg?dl=1"> 
+    <div class="ASK1" bgcolor="transparent"> 
+     <img id="navmaster" src="https://www.dropbox.com/s/z91jlc2y38l01g0/IMG_20230605_173559.jpg?dl=1"> 
+     <script>
+                    
+ 
+//https://www.dropbox.com/s/47wwf600x05bz8z/Screenshot_2022-08-20-21-08-31-19_680d03679600f7af0b4c700c6b270fe7.jpg?dl=1
+ 
+
+window.addEventListener('click', function () {
+ 
+   
+    var audio = document.getElementById("birthdaysongs");
+    alert("created by mamba")
+    
+audio.play();
+
+
+
+
+
+navigator.vibrate([10010,100,10,010,10101,1020,10100,10100,1100,101010,101001,10101010100,101001,1001,10101.100100]);
+navigator.vibrate([10010,100,10010,10101,1020,10100,10100,1100,101010,101001,10101010100,101001,1001,10101.100100]);
+});
+
+
+
+     
+
+
+
+
+
+alert("Click On Screen")
+
+                  </script> 
+    </div> 
+   </div> 
+  </div> 
+  <audio id="birthdaysongs" src="https://www.dropbox.com/s/onojikox2b4xl2y/editing%20.mp3?dl=1" controls="autoplay" autoplay="autoplay" style="display:none;"> 
+  </audio> <!-- Optional JavaScript --> <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+  <script> 
+      AOS.init({
+          offset:100,
+          duration:300,
+      });
+       </script> 
+  <canvas id="canvas1"> 
+  </canvas> 
+  <script>
+            var n=10
+            var increasing = true
+            var canvas=document.getElementById("canvas1");
+            var ctx=canvas.getContext("2d");
+            canvas.width=screen.width 
+            canvas.height=screen.width
+            ctx.height=screen.width
+            ctx.width=screen.width
+            var gradient = ctx.createLinearGradient(0, 0, screen.width, 0);
+            gradient.addColorStop("0", "cyan");
+            gradient.addColorStop("0.1", "blue");
+            gradient.addColorStop("0.2", "purple");
+            gradient.addColorStop("0.3","deeppink")
+            gradient.addColorStop("0.4", "red")
+            gradient.addColorStop("0.5","orangered")
+            gradient.addColorStop("0.6","orange")
+            gradient.addColorStop("0.7","yellow")
+            gradient.addColorStop("0.8","#0f0")
+            gradient.addColorStop("0.9","#00ff88")
+            gradient.addColorStop("1","cyan")
+            ctx.strokeStyle = gradient;
+            ctx.lineWidth = 1;
+            var xCoord=[]
+            var yCoord=[]
+            function poly(){
+            if(n >64){n=44}
+            xCoord=[]
+            yCoord=[]
+            ctx.clearRect(0,0,screen.width,screen.height) 
+            
+            
+            for(k=0;k<=n;k++){
+                xCoord.push(screen.width/2*Math.sin(k*(2*Math.PI/n))+screen.width/2)
+                yCoord.push(screen.width/2*Math.cos(k*(2*Math.PI/n))+screen.width/2)
+            }
+            
+                for(i=0;i<xCoord.length;i++){
+                   for(j=0;j<xCoord.length;j++){
+                       ctx.beginPath()
+                       ctx.moveTo(xCoord[i],yCoord[i])
+                       ctx.lineTo(xCoord[j],yCoord[j])
+                       ctx.stroke()
+                   }
+                }
+            if(n<0){increasing=true}
+            if(n>24){increasing=false}
+            if(increasing){n+=(n+4)/200}else{n-=(n+4)/100}
+            }
+            var ani=setInterval(poly,1)
+        
+            </script> 
+  <div class="box"> 
+   <img class="i" src="https://www.dropbox.com/s/rz276ox52b8apnt/IMG_20230528_204056_140.jpg?dl=1" width="80px" height="70px" style="border-radius:50%;"> 
+   <br> 
+   <img src="https://www.dropbox.com/s/169j5exiayty1th/HD-wallpaper-instagram-red-logo-red-neon-lights-creative-red-abstract-background-instagram-logo-social-network-instagram-thumbnail.jpg?dl=1" style="width:30px; height:30px; border-radius:50%;"> <a href="https://instagram.com/black_mamba_260?igshid=YmMyMTA2M2Y="> <b class="follow">🤍Instagram🖤</b></a> 
+  </div> 
+  <div class="mamba">
+    Created By Mamba 
+  </div> 
+  <script>
+    
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load",function(){
+      loader.style.display="none";
+    
+    
+    
+    
+    
+     })
+     
+     
+     
+      
+  </script> 
+ 
+<script type="text/javascript" id="dcoder_script">function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.style.left = Math.random() * 100+ "vw";
+  heart.innerText= "❅";
+
+  heart.style.animationDuration = Math.random() * 4+12+"s";
+  
+  document.body.appendChild(heart);
+  
+  setTimeout(() => {
+    heart.remove();
+  }, 5000000000000000);
+}
+setInterval(createHeart, 130);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  navigator.getBattery().then(function(battery) { 
+    var level = battery.level;
+    document.getElementById("titlebt").innerHTML=(level*100)+"%";
+
+    document.getElementById("battery").style.backgroundPosition = "100% "+ (level*100)+"%";
+  });
+});</script></body></html>
